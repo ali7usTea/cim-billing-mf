@@ -1,0 +1,13 @@
+{
+  "extends": ["next/core-web-vitals", "next"],
+  "rules": {
+    "@next/next/no-document-import-in-page": "off",
+    "@next/next/no-img-element": "off",
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
+    "header-max-length": "off",
+    "react-hooks/rules-of-hooks": "off", // Disable rules for hooks
+    "react-hooks/exhaustive-deps": "off", // Disable dependency array checks
+    "react/react-in-jsx-scope": "off" // Disable React import requirement
+  }
+}

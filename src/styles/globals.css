@@ -1,0 +1,74 @@
+
+@import "tailwindcss";
+@import "cim-ui-components/cim-ui-components.css";
+
+/* Only apply dark mode theme when html has className dark, to avoid user agent preference kicking in */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    /* primary colors */
+    --color-primary-700: #023c62;
+    --color-primary-600: #015c92;
+    --color-primary: #0974d2;
+    --color-primary-400: #409bd2;
+    --color-primary-300: #a4d0e9;
+    --color-primary-200: #0974d21a;
+    
+    /* secondary colors */
+    --color-secondary-700: #e15e05;
+    --color-secondary-600: #fd6600;
+    --color-secondary: #fc7f00;
+    --color-secondary-400: #fd9933;
+    --color-secondary-300: #fecc99;
+    --color-secondary-200: #fff5eb;
+    
+    /* neutral colors */
+    --color-neutral-700: #191329;
+    --color-neutral-600: #474747;
+    --color-neutral: #939393;
+    --color-neutral-400: #dadada;
+    --color-neutral-300: #ededed;
+    --color-neutral-200: #f9fafb;
+    --color-neutral-100: #F6F6F7;
+    
+    --color-success-700: rgba(46, 125, 50, 1);
+    --color-success-600: rgba(46, 125, 50, 1);
+    --color-success: rgba(46, 125, 50, 1);
+    --color-success-400: rgba(46, 125, 50, 1);
+    --color-success-300: #dcfce7;
+    
+    --color-destructive: rgba(211, 47, 47, 1);
+    --color-warning: rgba(255, 180, 0, 1);
+    
+    --gradient-primary-vertical: linear-gradient(180deg, #6bace4 0%, #0974d2 100%);
+    --gradient-secondary-vertical: linear-gradient(
+    180deg,
+    rgba(106, 171, 228, 0.5) 0%,
+    rgba(12, 118, 210, 0.9) 100%
+    );
+    
+    /* app colors */
+    --color-label: #474747;
+    /* --color-lightGray:#C9C9C9; */
+    --color-lightGray: #c9c9c9;
+    --color-blue-highlighter: #0a68ba;
+    --color-teal-600: #7fcbcb;
+    --color-teal-400: #0d6464;
+    --color-teal-300: #f5fafa;
+    --color-tab-simple: #71717a;
+    --color-primary: #e00800;
+    --color-mauves: #631C46;
+    --color-green: #00C26E;
+    --color-default: #4a4d4e;
+    --color-warning: #f26600;
+    --color-error: #E00800;
+    --color-info: #006BFF;
+    
+
+}
+
+.cms-bill-details  h3 { @apply p-2!  }
+.footer-text { @apply text-xs! }
+.biling-report-layout label,
+.cim-datesearch label,
+.cim-adjust-transfer label { @apply text-xs! whitespace-nowrap }

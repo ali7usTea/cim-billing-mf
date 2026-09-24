@@ -1,0 +1,1 @@
+export const DEFAULT_INTERVAL_BETWEEN_DATES = 30;
